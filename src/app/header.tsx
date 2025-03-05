@@ -17,7 +17,7 @@ export default function Header() {
         <div className="relative max-w-lg w-full">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />{/*ChatGPT generated code hai yeh*/}
           <input
-            className="w-full pl-15 p-2 rounded-full text-white outline-none border border-gray-700 placeholder-gray-400"
+            className="w-full pl-12 p-2 rounded-full text-white text-[15px] font-semibold outline-none border border-gray-700 placeholder-gray-400"
             placeholder="Search YouTube"
           />
         </div>
