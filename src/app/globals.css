@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme { 
-  --background:hsl(0, 0%, 13%);
-  --secondary-background:hsl(0 0% 7%);
+  --background:hsl(0, 0%, 6%);
+  --secondary-background:hsl(0 0% 20%);
   --gray:hsl(0 0% 78%);
   --white:hsl(0 0% 100%);
   --border:hsl(0 0% 19%);
