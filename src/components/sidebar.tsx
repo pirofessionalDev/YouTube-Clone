@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Layers2, TvMinimalPlay, ChevronRight,History,ListVideo, Clock, ThumbsUp } from 'lucide-react';
+import { Home, Layers2, TvMinimalPlay, ChevronRight, History, ListVideo, Clock, ThumbsUp } from 'lucide-react';
 
 export default function SideBar() {
   return (
@@ -19,11 +19,13 @@ export default function SideBar() {
       </button>
 
       {/* Border Separator Below Subscription */}
-      <div className="border-b border-gray-600 pb-2"></div> {/*the border is treated as a single div tag*/}
+      <div className="border-b border-gray-600 pb-2"></div>
+
+      {/* You Section */}
       <div>
         <button className="flex w-full h-12 rounded-2xl text-white font-semibold items-center p-[10px] cursor-pointer hover:bg-[var(--button-hover-background)] transition gap-5">
           You
-          <ChevronRight /> {/* Pushes Chevron to Right */}
+          <ChevronRight className="ml-auto" /> 
         </button>
         <button className="flex w-full h-12 rounded-2xl text-white font-semibold items-center p-[10px] cursor-pointer hover:bg-[var(--button-hover-background)] transition gap-5">
           History
@@ -38,10 +40,26 @@ export default function SideBar() {
           <Clock className="ml-auto" />
         </button>
         <button className="flex w-full h-12 rounded-2xl text-white font-semibold items-center p-[10px] cursor-pointer hover:bg-[var(--button-hover-background)] transition gap-5">
-          Liked Video
-          <ThumbsUp className="ml-auto" /> {/* Pushes Chevron to Right */}
+          Liked Videos
+          <ThumbsUp className="ml-auto" /> 
         </button>
-    <div className="border-b border-gray-600 pb-2"></div>  
+        
+        {/* Border Separator Below "You" Section */}
+        <div className="border-b border-gray-600 pb-2"></div>
+
+        {/* Subscriptions Section */}
+        <div>
+          <h3 className="text-white text-sm font-semibold px-4 py-2">Subscriptions</h3>
+          <button className="flex items-center w-full h-12 rounded-2xl text-white font-semibold p-[10px] cursor-pointer hover:bg-[var(--button-hover-background)] transition gap-3">
+            {/* Improved Profile Image */}
+            <img 
+              src="/NC-logo.png" 
+              alt="Networking Chuck" 
+              className="w-9 h-9 rounded-full object-cover shadow-md border border-gray-700"
+            />
+            <span className="truncate">Networking Chuck</span>
+          </button>
+        </div>
       </div>
     </div>
   );
