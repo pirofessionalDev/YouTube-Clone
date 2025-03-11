@@ -5,7 +5,7 @@ export default function SideBar() {
   return (
     <div className="w-60 h-screen bg-[var(--background)] overflow-y-auto custom-scrollbar p-[2px] space-y-2.5">
       {/* Sidebar Items */}
-      <button className="flex w-full h-12 rounded-2xl bg-[var(--secondary-background)] text-white font-semibold items-center p-[10px] hover:bg-gray-700 transition gap-5 cursor-pointer">
+      <button className="flex w-full h-12 rounded-2xl bg-[var(--secondary-background)] text-white font-semibold items-center p-[10px] hover:bg-[var(--button-hover-background)] transition gap-5 cursor-pointer">
         <Home />
         Home
       </button>
